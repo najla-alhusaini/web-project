@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Evaluation — Clean Touch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container header-row">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt=""><span class="title">Clean touch</span></a>
+    <nav><ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="active" href="customer-dashboard.html">Customer Dashboard</a></li>
+      <li><a href="provider-dashboard.html">Provider Dashboard</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main class="container">
+  <p class="breadcrumbs"><a href="customer-dashboard.html">Customer Dashboard</a> › Service Evaluation</p>
+
+  <section class="card">
+    <h1 style="text-align:center; margin-bottom:16px;">Service Evaluation</h1>
+   <form class="form-grid" id="evaluationForm">
+
+  <label>Select Service
+    <select id="evalService">
+      <option value="">— Choose —</option>
+      <option value="Dry Cleaning">Dry Cleaning</option>
+      <option value="Ironing">Ironing</option>
+      <option value="Washing">Washing</option>
+      <option value="Folding Clothes Professionally">Folding Clothes Professionally</option>
+    </select>
+  </label>
+
+  <label>Full Name
+    <input type="text" id="evalName">
+  </label>
+
+  <label>Rating</label>
+ <div class="rating">
+  <input type="radio" id="star5" name="rating" value="5">
+  <label for="star5">★</label>
+
+  <input type="radio" id="star4" name="rating" value="4">
+  <label for="star4">★</label>
+
+  <input type="radio" id="star3" name="rating" value="3">
+  <label for="star3">★</label>
+
+  <input type="radio" id="star2" name="rating" value="2">
+  <label for="star2">★</label>
+
+  <input type="radio" id="star1" name="rating" value="1">
+  <label for="star1">★</label>
+</div>
+
+  <label>Feedback
+    <textarea id="feedback"></textarea>
+  </label>
+
+  <div class="form-actions">
+    <button type="reset" class="btn gray">Cancel</button>
+    <button type="submit" class="btn">Submit</button>
+  </div>
+
+</form>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col"><img src="images/logo.png" alt="logo" class="footer-logo"></div>
+	<div class="footer-col"><h4>Contact us</h4><p>Making laundry day effortless. Book, clean, and relax with CleanTouch.</p><p class="copy">©2025 CleanTouch</p></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/facebook.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/instagram.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/twitter.png" alt=""></div></div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

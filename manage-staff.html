@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Staff Members — Clean Touch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="">
+        <span class="title">Clean touch</span>
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="customer-dashboard.html">Customer Dashboard</a></li>
+          <li><a class="active" href="provider-dashboard.html">Provider Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="breadcrumbs">
+      <a href="provider-dashboard.html">Provider Dashboard</a> › Manage Staff Members
+    </p>
+<h1 class="page-title">Manage Staff Members</h1>
+
+    <section class="card">
+      <!-- Flex عمودي عشان نقدر نرفع التولبار فوق بصريًا -->
+      <form id="manageStaffForm" action="#" method="post" class="delete-form">
+        <div class="staff-wrap">
+		
+<h2 class="section-title">Staff Members</h2>
+
+          <div class="staff-list">
+            <label class="staff-item">
+              <input class="staff-check" type="checkbox" name="delete_ids[]" value="1">
+              <span><img src="images/emp1.png" alt="Sarah Malik" width="100" height="56"></span>
+              <span>Sarah Malik</span>
+            </label>
+
+            <label class="staff-item">
+              <input class="staff-check" type="checkbox" name="delete_ids[]" value="2">
+              <span><img src="images/emp4.png" alt="Ahmed Ali" width="100" height="56"></span>
+              <span>Ahmed Ali</span>
+            </label>
+
+            <label class="staff-item">
+              <input class="staff-check" type="checkbox" name="delete_ids[]" value="3">
+              <span><img src="images/emp2.png" alt="Sami Saad" width="100" height="56"></span>
+              <span>Sami Saad</span>
+            </label>
+
+            <label class="staff-item">
+              <input class="staff-check" type="checkbox" name="delete_ids[]" value="4">
+              <span><img src="images/emp3.png" alt="Layla Yasser" width="100" height="56"></span>
+              <span>Layla Yasser</span>
+            </label>
+          </div>
+
+         
+          <div class="ms-toolbar">
+            <a class="btn" href="add-staff.html">+ Add New Staff</a>
+          </div>
+
+          <!-- أزرار تظهر فقط عند وجود تحديد -->
+          <div class="form-actions ms-actions">
+            <button type="reset" class="btn gray">Cancel</button>
+        <button type="submit" class="btn" >Delete</button>
+          </div>
+
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="logo" class="footer-logo">
+      </div>
+      <div class="footer-col">
+        <h4>Contact us</h4>
+        <p>Making laundry day effortless. Book, clean, and relax with CleanTouch.</p>
+        <p class="copy">©2025 CleanTouch</p>
+      </div>
+      <div class="footer-col"><div class="icon-placeholder"><img src="images/facebook.png" alt=""></div></div>
+      <div class="footer-col"><div class="icon-placeholder"><img src="images/instagram.png" alt=""></div></div>
+      <div class="footer-col"><div class="icon-placeholder"><img src="images/twitter.png" alt=""></div></div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

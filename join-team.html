@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--*تعديل يارا-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Touch - Application form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container header-row">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt=""><span class="title">Clean touch</span></a>
+    <nav><ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a class="active" href="about.html">About Us</a></li>
+      <li><a href="customer-dashboard.html">Customer Dashboard</a></li>
+      <li><a href="provider-dashboard.html">Provider Dashboard</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main class="container">
+  <p class="breadcrumbs"><a href="about.html">About Us</a> › Application Form</p>
+  <div class="page-header" style="text-align:center;">
+  <img src="images/teamicon.png" alt="Team Icon" style="width:70px; display:block; margin:0 auto;">
+  <h1 style="font-size:2rem; font-weight:800; margin:0;">Join Our Team</h1>
+  <p style="margin-top:0;">We’re looking for passionate individuals to join Clean Touch.</p>
+</div>
+
+
+
+  <section class="card">
+  <h2 style="margin-bottom:10px;">Application Form</h2>
+  <form id="applicationForm" class="form-grid form-3" action="#">
+      <div>
+        <label>Full Name *</label>
+        <input type="text" id="fullName" >
+      </div>
+      <div>
+        <label>Date of Birth *</label>
+        <input type="date" id="dob" >
+      </div>
+      <div>
+        <label>Email Address *</label>
+        <input type="email" id="email" >
+      </div>
+
+      <div>
+        <label>Area of Expertise *</label>
+        <input type="text" id="expertise" >
+      </div>
+      <div>
+        <label>Education Background (comma-separated) *</label>
+        <input type="text" id="education" placeholder="e.g., BSc CS, MSc SE">
+      </div>
+      <div>
+        <label>Professional Photo *</label>
+        <input type="file" id="photo" accept="image/*" >
+      </div>
+
+      <div>
+        <label>Skills (comma-separated) *</label>
+        <input type="text" id="skills" placeholder="e.g., ironing, stain removal" >
+      </div>
+      <div style="grid-column: span 2;">
+        <label>Why do you want to join clean touch? *</label>
+        <textarea id="reason"></textarea>
+      </div>
+
+      <div class="form-actions" style="grid-column: 1 / -1;">
+        
+        <button type="reset" class="btn gray">Cancel</button>
+        <button type="submit" id="submitBtn" class="btn">Submit</button>
+      </div>
+    </form>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col"><img src="images/logo.png" alt="logo" class="footer-logo"></div>
+	<div class="footer-col"><h4>Contact us</h4><p>Making laundry day effortless. Book, clean, and relax with CleanTouch.</p><p class="copy">©2025 CleanTouch</p></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/facebook.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/instagram.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/twitter.png" alt=""></div></div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

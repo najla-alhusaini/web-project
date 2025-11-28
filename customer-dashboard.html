@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard — Clean Touch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container header-row">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt=""><span class="title"> Clean touch</span></a>
+    <nav><ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="active" href="customer-dashboard.html">Customer Dashboard</a></li>
+      <li><a href="provider-dashboard.html">Provider Dashboard</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <span class="icon-placeholder2"></span>
+    <h1>Customer Dashboard</h1>
+    <p>Keep track of your laundry requests, check their status, and explore our services — all in one place.</p><br>
+  </div>
+
+
+  <section class="tiles">             
+    <div class="tile"><h4>Total Orders</h4><p>3</p></div>
+    <div class="tile"><h4>Active Orders</h4><p>1</p></div>
+    <div class="tile"><h4>Total Spent</h4><p>50 SAR</p></div> <!-- cahnged from strong to h4 to remove validator warning and make it more accessible -->
+  </section>
+  
+
+  <section class="actions">
+  <a class="action request-link" href="request-service.html">
+    <img src="images/plusIcon.png" alt="Create new service Request" class="action-icon">
+    <h3>Request a Service</h3>
+  </a>
+
+  <a class="action rate-link" href="evaluate-service.html">
+    <img src="images/star2.png" alt="Review your last service" class="action-icon">
+    <h3>Rate Us</h3>
+  </a>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2 style="margin-bottom:10px;">Previous service requests</h2>
+	<table class="profile-table">
+	<tr>
+		<th>Service Name</th>
+		<th>Date</th>
+		<th>Cost</th>
+		<th>Status</th>
+	</tr>
+	<tr>
+		<td>Folding Clothes Professionally</td>
+		<td>2025-10-25</td>
+		<td>—</td>
+		<td class="status pending">Pending</td>
+	</tr>
+	<tr>
+		<td>Ironing</td>
+		<td>2025-10-22</td>
+		<td>40 SAR</td>
+		<td class="status declined">Declined</td>
+	</tr>
+	<tr>
+		<td>Dry Cleaning</td>
+		<td>2025-10-20</td> 
+		<td>50 SAR</td>
+		<td class="status completed">Completed</td>
+	</tr>
+	</table>
+  </section>
+</main>
+
+<br><br>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col"><img src="images/logo.png" alt="logo" class="footer-logo"></div>
+	<div class="footer-col"><h4>Contact us</h4><p>Making laundry day effortless. Book, clean, and relax with CleanTouch.</p><p class="copy">©2025 CleanTouch</p></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/facebook.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/instagram.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/twitter.png" alt=""></div></div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>

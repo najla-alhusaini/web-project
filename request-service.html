@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Service — Clean Touch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container header-row">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt=""><span class="title">Clean touch</span></a>
+    <nav><ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="active" href="customer-dashboard.html">Customer Dashboard</a></li>
+      <li><a href="provider-dashboard.html">Provider Dashboard</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main class="container">
+  <p class="breadcrumbs"><a href="customer-dashboard.html">Customer Dashboard</a> › Request a Service</p>
+
+  <section class="card">
+    <h1 style="text-align:center; margin-bottom:16px;">Request a Service</h1>
+<form class="form-grid" id="requestForm">
+
+  <label>Select Service
+    <select id="service">
+      <option value="">— Choose —</option>
+      <option value="Dry-Cleaning">Dry-Cleaning</option>
+      <option value="Ironing">Ironing</option>
+      <option value="Washing">Washing</option>
+      <option value="Folding Clothes Professionally">Folding Clothes Professionally</option>
+    </select>
+  </label>
+
+  <label>Full Name
+    <input type="text" id="fullName">
+  </label>
+
+  <!-- DATE + TIME -->
+  <div class="form-2">
+    <label>Date
+      <input type="date" id="dueDate">
+    </label>
+    <label>Time
+      <input type="time" class="time-box" id="time">
+    </label>
+  </div>
+
+  <!-- VOUCHER + APPLY -->
+  <div class="form-2">
+    <label>Vouchers/Gift Card code
+	<input type="text" id="voucher">
+	<small style="color:#6b7280; font-size:0.85rem;">
+    Valid codes: DISCOUNT10, CLEANTOUCH20
+	</small>
+	</label>
+    <div style="align-self:end;">
+      <button class="btn gray" type="button" id="applyBtn">Apply</button>
+    </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <label>Description
+    <textarea id="description"></textarea>
+  </label>
+
+  <div class="form-actions">
+    <button type="reset" class="btn gray">Cancel</button>
+    <button type="submit" class="btn">Submit</button>
+  </div>
+
+</form>
+
+<!-- Summary section -->
+<section class="card" id="requestSummary" style="display:none; margin-top:16px;">
+  <h2>Submitted Requests</h2>
+  <ul id="requestList"></ul>
+</section>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col"><img src="images/logo.png" alt="logo" class="footer-logo"></div>
+	<div class="footer-col"><h4>Contact us</h4><p>Making laundry day effortless. Book, clean, and relax with CleanTouch.</p><p class="copy">©2025 CleanTouch</p></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/facebook.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/instagram.png" alt=""></div></div>
+    <div class="footer-col"><div class="icon-placeholder"><img src="images/twitter.png" alt=""></div></div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
